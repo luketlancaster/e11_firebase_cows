@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 
 import auth from './components/auth/auth';
+import authData from './helpers/data/authData';
 
 import apiKeys from './helpers/apiKeys.json';
 
@@ -9,6 +10,7 @@ import 'bootstrap';
 
 const init = () => {
   firebase.initializeApp(apiKeys.firebaseKeys);
+  authData.checkLoginStatus();
   auth.loginButton();
 };
 
