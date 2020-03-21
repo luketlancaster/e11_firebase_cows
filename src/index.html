@@ -6,7 +6,25 @@
   <title>Cows</title>
 </head>
 <body>
-  <button class="btn btn-warning"><i class="fas fa-satellite fa-spin fa-10x"></i></button>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Cows</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <button id="navbar-logout-button" class="nav-link btn btn-outline-info hide">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="auth"></div>
+  <div id="pasture" class="hide"><h2><i class="fas fa-eye fa-spin"></i> see <i class="fas fa-hat-cowboy-side fa-spin"></i></h2></div>
 
 </body>
 </html>
